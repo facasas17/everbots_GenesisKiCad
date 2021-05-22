@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name M10_Queltec)(type Legacy)(uri ${KIPRJMOD}/Librerias/M10_Queltec.lib)(options "")(descr ""))
+  (lib (name SIM_connector)(type Legacy)(uri ${KIPRJMOD}/Librerias/SIM_connector.lib)(options "")(descr ""))
+)
