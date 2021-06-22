@@ -1,0 +1,785 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_GSM:BC66 U2
+U 1 1 60D15DD4
+P 4700 4300
+F 0 "U2" H 4700 4300 50  0000 C CNN
+F 1 "BC66" H 4700 3850 50  0000 C CNN
+F 2 "RF_GSM:Quectel_BC66" H 5250 3250 50  0001 C CNN
+F 3 "https://www.quectel.com/UploadImage/Downlad/Quectel_BC66_Hardware_Design_V1.1.pdf" H 6400 3300 50  0001 C CNN
+	1    4700 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60CEFEEF
+P 4100 2150
+AR Path="/60CEFEEF" Ref="C?"  Part="1" 
+AR Path="/60D156AE/60CEFEEF" Ref="C10"  Part="1" 
+F 0 "C10" H 4000 2250 50  0000 L CNN
+F 1 "100p" H 3900 2050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4138 2000 50  0001 C CNN
+F 3 "~" H 4100 2150 50  0001 C CNN
+	1    4100 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60CEFFAF
+P 4400 2150
+AR Path="/60CEFFAF" Ref="C?"  Part="1" 
+AR Path="/60D156AE/60CEFFAF" Ref="C11"  Part="1" 
+F 0 "C11" H 4300 2250 50  0000 L CNN
+F 1 "22p" H 4200 2050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4438 2000 50  0001 C CNN
+F 3 "~" H 4400 2150 50  0001 C CNN
+	1    4400 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60CF0152
+P 3850 2150
+AR Path="/60CF0152" Ref="C?"  Part="1" 
+AR Path="/60D156AE/60CF0152" Ref="C9"  Part="1" 
+F 0 "C9" H 3750 2250 50  0000 L CNN
+F 1 "100n" H 3650 2050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3888 2000 50  0001 C CNN
+F 3 "~" H 3850 2150 50  0001 C CNN
+	1    3850 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D1
+U 1 1 60CF145A
+P 3250 2150
+F 0 "D1" V 3200 1950 50  0000 L CNN
+F 1 "P6KE12A" V 3350 1800 50  0000 L CNN
+F 2 "Diode_THT:D_DO-15_P15.24mm_Horizontal" H 3250 2150 50  0001 C CNN
+F 3 "https://www.sycelectronica.com.ar/semiconductores/P6KEXX.pdf" H 3250 2150 50  0001 C CNN
+	1    3250 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1 C8
+U 1 1 60CF24D1
+P 3600 2150
+F 0 "C8" H 3400 2250 50  0000 L CNN
+F 1 "100u" H 3400 2050 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm" H 3600 2150 50  0001 C CNN
+F 3 "https://www.sycelectronica.com.ar/pasivos/RXXXMXX.pdf" H 3600 2150 50  0001 C CNN
+	1    3600 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3200 4600 2000
+Wire Wire Line
+	4600 2000 4400 2000
+Wire Wire Line
+	4400 2000 4100 2000
+Connection ~ 4400 2000
+Wire Wire Line
+	4100 2000 3850 2000
+Connection ~ 4100 2000
+Wire Wire Line
+	3850 2000 3600 2000
+Connection ~ 3850 2000
+Wire Wire Line
+	3600 2000 3250 2000
+Connection ~ 3600 2000
+Wire Wire Line
+	3250 2300 3250 2400
+Wire Wire Line
+	3250 2400 3600 2400
+Wire Wire Line
+	4400 2400 4400 2300
+Wire Wire Line
+	4100 2300 4100 2400
+Connection ~ 4100 2400
+Wire Wire Line
+	4100 2400 4400 2400
+Wire Wire Line
+	3850 2300 3850 2400
+Connection ~ 3850 2400
+Wire Wire Line
+	3850 2400 4100 2400
+Wire Wire Line
+	3600 2300 3600 2400
+Connection ~ 3600 2400
+Wire Wire Line
+	3600 2400 3850 2400
+$Comp
+L power:GND #PWR036
+U 1 1 60CF9B4A
+P 3600 2400
+F 0 "#PWR036" H 3600 2150 50  0001 C CNN
+F 1 "GND" H 3605 2227 50  0000 C CNN
+F 2 "" H 3600 2400 50  0001 C CNN
+F 3 "" H 3600 2400 50  0001 C CNN
+	1    3600 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR037
+U 1 1 60CFA062
+P 4700 5450
+F 0 "#PWR037" H 4700 5200 50  0001 C CNN
+F 1 "GND" H 4705 5277 50  0000 C CNN
+F 2 "" H 4700 5450 50  0001 C CNN
+F 3 "" H 4700 5450 50  0001 C CNN
+	1    4700 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 5450 4700 5400
+Wire Wire Line
+	4700 3200 4700 2000
+Wire Wire Line
+	4700 2000 4600 2000
+Connection ~ 4600 2000
+Text HLabel 3150 1900 0    50   Input ~ 0
+VCC
+Wire Wire Line
+	3150 1900 3250 1900
+Wire Wire Line
+	3250 1900 3250 2000
+Connection ~ 3250 2000
+$Comp
+L Device:Q_NPN_BCE Q4
+U 1 1 60D012E6
+P 2200 4750
+F 0 "Q4" H 2391 4796 50  0000 L CNN
+F 1 "BC546" H 2391 4705 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 2400 4850 50  0001 C CNN
+F 3 "~" H 2200 4750 50  0001 C CNN
+	1    2200 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 60D01709
+P 1800 4750
+F 0 "R3" V 1593 4750 50  0000 C CNN
+F 1 "4.7k" V 1684 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 1730 4750 50  0001 C CNN
+F 3 "~" H 1800 4750 50  0001 C CNN
+	1    1800 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 4500 2300 4500
+Wire Wire Line
+	2300 4500 2300 4550
+Wire Wire Line
+	2300 4950 2300 5000
+Wire Wire Line
+	2000 4750 1950 4750
+Text HLabel 1500 4750 0    50   Input ~ 0
+PWR_KEY
+Wire Wire Line
+	1650 4750 1500 4750
+$Comp
+L power:GND #PWR02
+U 1 1 60D0386F
+P 2300 5600
+F 0 "#PWR02" H 2300 5350 50  0001 C CNN
+F 1 "GND" H 2305 5427 50  0000 C CNN
+F 2 "" H 2300 5600 50  0001 C CNN
+F 3 "" H 2300 5600 50  0001 C CNN
+	1    2300 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 60D03197
+P 2300 5150
+F 0 "R6" H 2230 5104 50  0000 R CNN
+F 1 "47k" H 2230 5195 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2230 5150 50  0001 C CNN
+F 3 "~" H 2300 5150 50  0001 C CNN
+	1    2300 5150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4100 4600 3100 4600
+Wire Wire Line
+	3100 4600 3100 5550
+$Comp
+L Switch:SW_Push SW1
+U 1 1 60D14B68
+P 2850 5550
+F 0 "SW1" H 2850 5835 50  0000 C CNN
+F 1 "SW_Push" H 2850 5744 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 2850 5750 50  0001 C CNN
+F 3 "https://www.sycelectronica.com.ar/electromecanicos/TS-X.pdf" H 2850 5750 50  0001 C CNN
+	1    2850 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 5550 2300 5550
+Wire Wire Line
+	2300 5300 2300 5550
+Connection ~ 2300 5550
+Wire Wire Line
+	2300 5550 2300 5600
+Wire Wire Line
+	3100 5550 3050 5550
+NoConn ~ 4100 4200
+NoConn ~ 4100 4300
+NoConn ~ 4100 3900
+NoConn ~ 4100 4000
+$Comp
+L Device:Q_NPN_BCE Q5
+U 1 1 60D18A8B
+P 3100 3400
+F 0 "Q5" V 3300 3300 50  0000 C CNN
+F 1 "BC546" V 3300 3550 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 3300 3500 50  0001 C CNN
+F 3 "~" H 3100 3400 50  0001 C CNN
+	1    3100 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 60D1E4F4
+P 2800 2950
+F 0 "R8" V 2593 2950 50  0000 C CNN
+F 1 "4.7k" V 2684 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2730 2950 50  0001 C CNN
+F 3 "~" H 2800 2950 50  0001 C CNN
+	1    2800 2950
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 60D1EE19
+P 3550 3350
+F 0 "R9" H 3620 3396 50  0000 L CNN
+F 1 "10k" H 3620 3305 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3480 3350 50  0001 C CNN
+F 3 "~" H 3550 3350 50  0001 C CNN
+	1    3550 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60D1FC36
+P 2800 3150
+AR Path="/60D1FC36" Ref="C?"  Part="1" 
+AR Path="/60D156AE/60D1FC36" Ref="C7"  Part="1" 
+F 0 "C7" V 2700 3200 50  0000 L CNN
+F 1 "1n" V 2750 3000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2838 3000 50  0001 C CNN
+F 3 "~" H 2800 3150 50  0001 C CNN
+	1    2800 3150
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2650 3150 2650 3050
+Wire Wire Line
+	2950 3150 2950 3050
+Wire Wire Line
+	3100 3200 3100 3050
+Wire Wire Line
+	3100 3050 2950 3050
+Connection ~ 2950 3050
+Wire Wire Line
+	2950 3050 2950 2950
+Wire Wire Line
+	3300 3500 3550 3500
+Text Label 4800 2950 0    50   ~ 0
+VDD_EXT
+Text Label 2550 3050 2    50   ~ 0
+VDD_EXT
+Text Label 3550 3150 2    50   ~ 0
+VDD_EXT
+Wire Wire Line
+	4800 2950 4800 3200
+Wire Wire Line
+	2550 3050 2650 3050
+Connection ~ 2650 3050
+Wire Wire Line
+	2650 3050 2650 2950
+Wire Wire Line
+	3550 3150 3550 3200
+$Comp
+L Device:Q_NPN_BCE Q3
+U 1 1 60D2E17D
+P 2050 3750
+F 0 "Q3" V 2378 3750 50  0000 C CNN
+F 1 "BC546" V 2287 3750 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 2250 3850 50  0001 C CNN
+F 3 "~" H 2050 3750 50  0001 C CNN
+	1    2050 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 60D2E183
+P 2350 4200
+F 0 "R7" V 2143 4200 50  0000 C CNN
+F 1 "4.7k" V 2234 4200 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2280 4200 50  0001 C CNN
+F 3 "~" H 2350 4200 50  0001 C CNN
+	1    2350 4200
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60D2E189
+P 1600 3800
+F 0 "R1" H 1530 3846 50  0000 R CNN
+F 1 "10k" H 1530 3755 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 1530 3800 50  0001 C CNN
+F 3 "~" H 1600 3800 50  0001 C CNN
+	1    1600 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60D2E18F
+P 2350 4000
+AR Path="/60D2E18F" Ref="C?"  Part="1" 
+AR Path="/60D156AE/60D2E18F" Ref="C6"  Part="1" 
+F 0 "C6" V 2250 4050 50  0000 L CNN
+F 1 "1n" V 2300 3850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2388 3850 50  0001 C CNN
+F 3 "~" H 2350 4000 50  0001 C CNN
+	1    2350 4000
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2500 4000 2500 4100
+Wire Wire Line
+	2200 4000 2200 4100
+Wire Wire Line
+	2050 3950 2050 4100
+Wire Wire Line
+	2050 4100 2200 4100
+Connection ~ 2200 4100
+Wire Wire Line
+	2200 4100 2200 4200
+Wire Wire Line
+	1850 3650 1600 3650
+Text Label 1600 4100 2    50   ~ 0
+VDD_EXT
+Wire Wire Line
+	2600 4100 2500 4100
+Connection ~ 2500 4100
+Wire Wire Line
+	2500 4100 2500 4200
+Wire Wire Line
+	4100 3600 3550 3600
+Wire Wire Line
+	3550 3600 3550 3500
+Connection ~ 3550 3500
+Text HLabel 2800 3500 0    50   Input ~ 0
+TXD
+Wire Wire Line
+	2900 3500 2800 3500
+Wire Wire Line
+	4100 3700 2250 3700
+Wire Wire Line
+	2250 3700 2250 3650
+Text HLabel 2600 4100 2    50   Input ~ 0
+VCC
+Wire Wire Line
+	1600 3950 1600 4100
+Text HLabel 1450 3650 0    50   Output ~ 0
+RXD
+Wire Wire Line
+	1450 3650 1600 3650
+Connection ~ 1600 3650
+$Comp
+L Device:C C?
+U 1 1 60D3C552
+P 9300 4150
+AR Path="/60D3C552" Ref="C?"  Part="1" 
+AR Path="/60D156AE/60D3C552" Ref="C16"  Part="1" 
+F 0 "C16" H 9200 4250 50  0000 L CNN
+F 1 "100n" H 9100 4050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 9338 4000 50  0001 C CNN
+F 3 "~" H 9300 4150 50  0001 C CNN
+	1    9300 4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 4000 9000 4000
+Wire Wire Line
+	9000 4100 9000 4300
+Wire Wire Line
+	9000 4300 9300 4300
+Wire Wire Line
+	9000 4300 5300 4300
+Wire Wire Line
+	5300 4300 5300 4200
+Connection ~ 9000 4300
+Connection ~ 9300 4000
+$Comp
+L Device:R R10
+U 1 1 60D422EA
+P 5500 3900
+F 0 "R10" V 5400 3900 50  0000 C CNN
+F 1 "22" V 5500 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5430 3900 50  0001 C CNN
+F 3 "~" H 5500 3900 50  0001 C CNN
+	1    5500 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 60D43239
+P 5850 4000
+F 0 "R13" V 5750 4000 50  0000 C CNN
+F 1 "22" V 5850 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5780 4000 50  0001 C CNN
+F 3 "~" H 5850 4000 50  0001 C CNN
+	1    5850 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 60D4359A
+P 6100 4100
+F 0 "R14" V 6000 4100 50  0000 C CNN
+F 1 "22" V 6100 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6030 4100 50  0001 C CNN
+F 3 "~" H 6100 4100 50  0001 C CNN
+	1    6100 4100
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5300 3900 5350 3900
+Wire Wire Line
+	8200 3900 8000 3900
+Wire Wire Line
+	5300 4000 5700 4000
+Wire Wire Line
+	5300 4100 5950 4100
+Wire Wire Line
+	8200 4100 7600 4100
+NoConn ~ 9000 3900
+$Comp
+L Device:C C?
+U 1 1 60D4E0F0
+P 6650 4550
+AR Path="/60D4E0F0" Ref="C?"  Part="1" 
+AR Path="/60D156AE/60D4E0F0" Ref="C14"  Part="1" 
+F 0 "C14" H 6550 4650 50  0000 L CNN
+F 1 "33p" H 6450 4450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 6688 4400 50  0001 C CNN
+F 3 "~" H 6650 4550 50  0001 C CNN
+	1    6650 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60D4EADD
+P 6450 4550
+AR Path="/60D4EADD" Ref="C?"  Part="1" 
+AR Path="/60D156AE/60D4EADD" Ref="C13"  Part="1" 
+F 0 "C13" H 6350 4650 50  0000 L CNN
+F 1 "33p" H 6250 4450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 6488 4400 50  0001 C CNN
+F 3 "~" H 6450 4550 50  0001 C CNN
+	1    6450 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60D4EDB5
+P 6250 4550
+AR Path="/60D4EDB5" Ref="C?"  Part="1" 
+AR Path="/60D156AE/60D4EDB5" Ref="C12"  Part="1" 
+F 0 "C12" H 6150 4650 50  0000 L CNN
+F 1 "33p" H 6050 4450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 6288 4400 50  0001 C CNN
+F 3 "~" H 6250 4550 50  0001 C CNN
+	1    6250 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60D4F0AB
+P 6850 4550
+AR Path="/60D4F0AB" Ref="C?"  Part="1" 
+AR Path="/60D156AE/60D4F0AB" Ref="C15"  Part="1" 
+F 0 "C15" H 6750 4650 50  0000 L CNN
+F 1 "33p" H 6650 4450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 6888 4400 50  0001 C CNN
+F 3 "~" H 6850 4550 50  0001 C CNN
+	1    6850 4550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4000 6450 4000
+Wire Wire Line
+	6250 4100 6250 4400
+Connection ~ 6250 4100
+Wire Wire Line
+	6450 4000 6450 4400
+Connection ~ 6450 4000
+Wire Wire Line
+	6450 4000 8200 4000
+$Comp
+L SIM_connector:SIM5060-6-0-26-00-X_REVC J4
+U 1 1 60D3A719
+P 8600 4000
+F 0 "J4" H 8600 4367 50  0000 C CNN
+F 1 "SIM" H 8600 4276 50  0000 C CNN
+F 2 "SnapEDA Library:GCT_SIM5060-6-0-26-00-X_REVC" H 8600 4000 50  0001 L BNN
+F 3 "" H 8600 4000 50  0001 L BNN
+F 4 "GCT" H 8600 4000 50  0001 L BNN "MANUFACTURER"
+	1    8600 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3900 6650 4400
+Connection ~ 6650 3900
+Wire Wire Line
+	6650 3900 5650 3900
+Wire Wire Line
+	6850 4700 6850 4800
+Wire Wire Line
+	6850 4800 6650 4800
+Wire Wire Line
+	6250 4800 6250 4700
+Wire Wire Line
+	6450 4700 6450 4800
+Connection ~ 6450 4800
+Wire Wire Line
+	6450 4800 6250 4800
+Wire Wire Line
+	6650 4700 6650 4800
+Connection ~ 6650 4800
+Wire Wire Line
+	6650 4800 6450 4800
+$Comp
+L power:GND #PWR039
+U 1 1 60D6E9A0
+P 6450 4800
+F 0 "#PWR039" H 6450 4550 50  0001 C CNN
+F 1 "GND" H 6455 4627 50  0000 C CNN
+F 2 "" H 6450 4800 50  0001 C CNN
+F 3 "" H 6450 4800 50  0001 C CNN
+	1    6450 4800
+	1    0    0    -1  
+$EndComp
+Connection ~ 5700 4000
+Wire Wire Line
+	5700 4000 5700 3850
+$Comp
+L Device:R R11
+U 1 1 60D6EEE5
+P 5700 3700
+F 0 "R11" V 5600 3700 50  0000 C CNN
+F 1 "10k" V 5700 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5630 3700 50  0001 C CNN
+F 3 "~" H 5700 3700 50  0001 C CNN
+	1    5700 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 3550 5300 3550
+Wire Wire Line
+	5300 3550 5300 3800
+Wire Wire Line
+	5700 3550 6850 3550
+Connection ~ 5700 3550
+Wire Wire Line
+	9300 3550 9300 4000
+Wire Wire Line
+	6850 3550 6850 4400
+Connection ~ 6850 3550
+Wire Wire Line
+	6850 3550 7900 3550
+$Comp
+L Device:D_Schottky D5
+U 1 1 60D945B6
+P 7600 4500
+F 0 "D5" V 7550 4300 50  0000 L CNN
+F 1 "P6KE12A" V 7700 4150 50  0000 L CNN
+F 2 "Diode_THT:D_DO-15_P15.24mm_Horizontal" H 7600 4500 50  0001 C CNN
+F 3 "https://www.sycelectronica.com.ar/semiconductores/P6KEXX.pdf" H 7600 4500 50  0001 C CNN
+	1    7600 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D7
+U 1 1 60D9A23C
+P 8000 4500
+F 0 "D7" V 7950 4300 50  0000 L CNN
+F 1 "P6KE12A" V 8100 4150 50  0000 L CNN
+F 2 "Diode_THT:D_DO-15_P15.24mm_Horizontal" H 8000 4500 50  0001 C CNN
+F 3 "https://www.sycelectronica.com.ar/semiconductores/P6KEXX.pdf" H 8000 4500 50  0001 C CNN
+	1    8000 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D6
+U 1 1 60D9A61C
+P 7900 3400
+F 0 "D6" V 7850 3200 50  0000 L CNN
+F 1 "P6KE12A" V 8000 3050 50  0000 L CNN
+F 2 "Diode_THT:D_DO-15_P15.24mm_Horizontal" H 7900 3400 50  0001 C CNN
+F 3 "https://www.sycelectronica.com.ar/semiconductores/P6KEXX.pdf" H 7900 3400 50  0001 C CNN
+	1    7900 3400
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7900 3550
+Wire Wire Line
+	7900 3550 9300 3550
+Wire Wire Line
+	8000 3900 8000 4350
+Connection ~ 8000 3900
+Wire Wire Line
+	8000 3900 6650 3900
+Wire Wire Line
+	7600 4100 7600 4350
+Connection ~ 7600 4100
+Wire Wire Line
+	7600 4100 6250 4100
+Wire Wire Line
+	7600 4650 7600 4800
+Wire Wire Line
+	8000 4800 8000 4650
+Wire Wire Line
+	6850 4800 7600 4800
+Connection ~ 6850 4800
+Connection ~ 7600 4800
+Wire Wire Line
+	7900 3250 9500 3250
+Wire Wire Line
+	9500 3250 9500 4800
+Wire Wire Line
+	7600 4800 8000 4800
+Connection ~ 8000 4800
+Wire Wire Line
+	8000 4800 9500 4800
+NoConn ~ 4100 3500
+$Comp
+L Device:Q_NPN_BCE Q6
+U 1 1 60DAAC1D
+P 6100 5700
+F 0 "Q6" H 6291 5746 50  0000 L CNN
+F 1 "BC546" H 6291 5655 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 6300 5800 50  0001 C CNN
+F 3 "~" H 6100 5700 50  0001 C CNN
+	1    6100 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 60DAAC23
+P 5700 5700
+F 0 "R12" V 5493 5700 50  0000 C CNN
+F 1 "4.7k" V 5584 5700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5630 5700 50  0001 C CNN
+F 3 "~" H 5700 5700 50  0001 C CNN
+	1    5700 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 5900 6200 5950
+Wire Wire Line
+	5900 5700 5850 5700
+$Comp
+L Device:R R15
+U 1 1 60DAAC2B
+P 6200 6100
+F 0 "R15" H 6130 6054 50  0000 R CNN
+F 1 "47k" H 6130 6145 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6130 6100 50  0001 C CNN
+F 3 "~" H 6200 6100 50  0001 C CNN
+	1    6200 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 60DB05AF
+P 6200 5300
+F 0 "D2" V 6239 5182 50  0000 R CNN
+F 1 "LED_RED" V 6148 5182 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 6200 5300 50  0001 C CNN
+F 3 "~" H 6200 5300 50  0001 C CNN
+	1    6200 5300
+	0    -1   -1   0   
+$EndComp
+Text HLabel 6200 5100 0    50   Input ~ 0
+VCC
+Wire Wire Line
+	6200 5150 6200 5100
+Wire Wire Line
+	6200 5500 6200 5450
+Wire Wire Line
+	5550 5700 5550 4900
+Wire Wire Line
+	5550 4900 5300 4900
+$Comp
+L power:GND #PWR038
+U 1 1 60DBB987
+P 6200 6300
+F 0 "#PWR038" H 6200 6050 50  0001 C CNN
+F 1 "GND" H 6205 6127 50  0000 C CNN
+F 2 "" H 6200 6300 50  0001 C CNN
+F 3 "" H 6200 6300 50  0001 C CNN
+	1    6200 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 6300 6200 6250
+NoConn ~ 4100 5100
+Text HLabel 3950 4900 0    50   Input ~ 0
+PSM_EINT
+Wire Wire Line
+	3950 4900 4100 4900
+NoConn ~ 5300 4400
+NoConn ~ 5300 4500
+NoConn ~ 5300 4600
+NoConn ~ 5300 4700
+Wire Wire Line
+	5300 3500 5650 3500
+$Comp
+L SMA_connector:221790-1 J11
+U 1 1 60DFEC49
+P 5750 2700
+F 0 "J11" V 5666 2511 50  0000 R CNN
+F 1 "SMA" V 5757 2511 50  0000 R CNN
+F 2 "Libreria:TE_221790-1" H 5750 2700 50  0001 L BNN
+F 3 "https://www.microelectronicash.com/sma-h-ci90--det--SMA-H-CI90" H 5750 2700 50  0001 L BNN
+F 4 "Compliant with Exemptions" H 5750 2700 50  0001 L BNN "EU_RoHS_Compliance"
+F 5 "1" H 5750 2700 50  0001 L BNN "Number_of_Positions"
+F 6 "221790-1" H 5750 2700 50  0001 L BNN "Comment"
+	1    5750 2700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5650 2800 5650 3500
+$Comp
+L power:GND #PWR040
+U 1 1 60E09939
+P 5850 2850
+F 0 "#PWR040" H 5850 2600 50  0001 C CNN
+F 1 "GND" H 5855 2677 50  0000 C CNN
+F 2 "" H 5850 2850 50  0001 C CNN
+F 3 "" H 5850 2850 50  0001 C CNN
+	1    5850 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2850 5850 2800
+$EndSCHEMATC

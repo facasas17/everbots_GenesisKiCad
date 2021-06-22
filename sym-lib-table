@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name SMA_connector)(type Legacy)(uri ${KIPRJMOD}/Libreria/221790-1.lib)(options "")(descr ""))
+  (lib (name SIM_connector)(type Legacy)(uri ${KIPRJMOD}/Libreria/SIM_connector.lib)(options "")(descr ""))
+)

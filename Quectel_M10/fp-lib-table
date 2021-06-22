@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name SIM_connector)(type KiCad)(uri ${KIPRJMOD}/Librerias)(options "")(descr ""))
-)
